@@ -1,9 +1,8 @@
 package com.advanced.tradebot.model.enumeration;
 
-public enum Currency {
+public enum OrderStatus {
 
-    BTC,
-    EOS,
-    USDT
+    OPEN,
+    CLOSED
 
 }

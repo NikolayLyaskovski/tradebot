@@ -1,9 +1,6 @@
 package com.advanced.tradebot.model.enumeration;
 
-public enum Currency {
+public enum Market {
 
-    BTC,
-    EOS,
-    USDT
-
+    KRAKEN
 }
