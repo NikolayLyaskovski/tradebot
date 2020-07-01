@@ -11,7 +11,7 @@ public class MarketCurrencyPairHistory {
     private Long id;
 
     @ManyToOne
-    @JoinColumn(name = "market_currency_pair-id")
+    @JoinColumn(name = "market_currency_pair_id")
     private MarketCurrencyPair marketCurrencyPair;
 
     @Column

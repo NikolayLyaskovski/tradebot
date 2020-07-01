@@ -1,21 +1,19 @@
 package com.advanced.tradebot.model;
 
-
-
-
 import com.advanced.tradebot.model.enumeration.Market;
 
 import javax.persistence.*;
 
 @Entity
+@Table(name = "market_currency_pair")
 public class MarketCurrencyPair {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @ManyToOne(cascade = {CascadeType.MERGE, CascadeType.PERSIST})
-    @JoinColumn(name = "market_id")
+   @Column
+   @Enumerated(EnumType.STRING)
     private Market market;
 
     @Column
